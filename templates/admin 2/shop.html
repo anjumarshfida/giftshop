@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <div class="card">
+        
+    <form method="post">
+        {%csrf_token%}
+    <h2>SHOP</h2>
+    <div>
+        <label for="name">name</label>
+        <input type="text" name="Name"/>
+        </div>
+        <div>
+        <label for="Shopname">shopname</label>
+        <input type="text" name="Shopname"  />
+        </div>
+        <div>
+        <label for="Address">address</label>
+        <input type="text" name="Address" />
+        </div>
+        <div>
+            <label for="email_id">email</label>
+            <input type="email" name="Emailid"/>
+            </div>
+            <div>
+                <label for="phone_number">phone_number</label>
+                <input type="text" name="phonenumber"/>
+            </div>
+            <div>
+                <label for="username">username</label>
+                <input type="text"/>
+            </div>
+         <div>
+            <label for="password">password</label>
+            <input type="password"/>
+         </div>
+         <div>
+            <button>sign_in</button>
+         </div> 
+
+         </form>       
+        </div>
+</body>
+</html>
